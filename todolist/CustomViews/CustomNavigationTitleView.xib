@@ -15,6 +15,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfY-E3-ueW">
+                    <rect key="frame" x="0.0" y="423" width="414" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj3-bd-sbk">
+                            <rect key="frame" x="0.0" y="15.5" width="131.5" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <color key="textColor" name="color_accent_secondary"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gj3-bd-sbk" firstAttribute="leading" secondItem="vfY-E3-ueW" secondAttribute="leading" id="FmF-Hq-rsH"/>
+                        <constraint firstAttribute="height" constant="60" id="jd0-vJ-CvG"/>
+                        <constraint firstItem="gj3-bd-sbk" firstAttribute="centerY" secondItem="vfY-E3-ueW" secondAttribute="centerY" id="zG4-wg-Jy1"/>
+                    </constraints>
+                </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abg-nn-OEM">
                     <rect key="frame" x="0.0" y="423" width="414" height="60"/>
                     <subviews>
@@ -63,8 +80,11 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vfY-E3-ueW" secondAttribute="trailing" id="RdI-VQ-Ab1"/>
+                <constraint firstItem="vfY-E3-ueW" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Ttl-MA-yIy"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="78E-Ev-5f2" secondAttribute="trailing" id="UZa-7r-ynP"/>
                 <constraint firstItem="78E-Ev-5f2" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="dIL-jI-zxM"/>
+                <constraint firstItem="vfY-E3-ueW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="goZ-Yf-hRu"/>
                 <constraint firstItem="abg-nn-OEM" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="m4z-lF-47h"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="abg-nn-OEM" secondAttribute="trailing" id="o0v-Wn-4fL"/>
                 <constraint firstItem="78E-Ev-5f2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ucA-dF-R1B"/>
@@ -74,6 +94,7 @@
                 <outlet property="ivAddNote" destination="Yh2-a2-y0I" id="4J0-OL-zqb"/>
                 <outlet property="viewTitleAddNote" destination="abg-nn-OEM" id="4Dd-Vp-0eE"/>
                 <outlet property="viewTitleHome" destination="78E-Ev-5f2" id="ZQX-fb-VUd"/>
+                <outlet property="viewTitleUpdateNote" destination="vfY-E3-ueW" id="aIB-Zd-umI"/>
             </connections>
             <point key="canvasLocation" x="139" y="129"/>
         </view>

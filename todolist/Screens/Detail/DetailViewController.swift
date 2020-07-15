@@ -17,6 +17,8 @@ protocol DetailViewOutputs: AnyObject {
 
 final class DetailViewController: UIViewController {
     
+    @IBOutlet weak var lblTask: UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var btnClose: UIButton!
     
     internal var presenter: DetailViewOutputs?

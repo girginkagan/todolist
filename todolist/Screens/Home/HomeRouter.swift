@@ -48,11 +48,15 @@ class HomeRouterOutput: BaseRouter {
         self.view = view
     }
     
-    func presentDetail(){
-        DetailRouterInput().present(from: view, entryEntity: DetailEntryEntity())
+    func presentDetail(object: TaskList){
+        DetailRouterInput().present(from: view, entryEntity: DetailEntryEntity(object: object))
     }
     
     func presentAddTask(){
         AddTaskRouterInput().present(from: view, entryEntity: AddTaskEntryEntity())
+    }
+    
+    func presentUpdateTask(object: TaskList){
+        UpdateTaskRouterInput().present(from: view, entryEntity: UpdateTaskEntryEntity(object: object))
     }
 }

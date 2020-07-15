@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTaskViewController" customModule="todolist" customModuleProvider="target">
             <connections>
+                <outlet property="btnAdd" destination="E0f-83-n4H" id="6p7-ZG-o2P"/>
+                <outlet property="tfTask" destination="UVI-gJ-sVa" id="bPr-BY-epY"/>
+                <outlet property="tfTitle" destination="vXG-XY-Hr3" id="zF3-5f-JC8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -62,9 +65,9 @@
                         </textField>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0f-83-n4H">
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0f-83-n4H">
                     <rect key="frame" x="20" y="762" width="374" height="50"/>
-                    <color key="backgroundColor" name="color_accent"/>
+                    <color key="backgroundColor" name="color_accent_secondary_light"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="F1Q-J5-oYZ"/>
                     </constraints>
@@ -93,9 +96,6 @@
         </view>
     </objects>
     <resources>
-        <namedColor name="color_accent">
-            <color red="0.52941176470588236" green="0.396078431372549" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="color_accent_secondary">
             <color red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

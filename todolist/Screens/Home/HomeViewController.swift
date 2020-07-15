@@ -13,6 +13,7 @@ protocol HomeViewInputs: AnyObject {
 
 protocol HomeViewOutputs: AnyObject {
     func viewDidLoad()
+    func viewWillAppear()
 }
 
 final class HomeViewController: UIViewController {
@@ -25,6 +26,10 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        presenter?.viewWillAppear()
     }
 }
 

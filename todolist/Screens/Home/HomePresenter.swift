@@ -27,6 +27,12 @@ class HomePresenter: BasePresenter {
 
 extension HomePresenter: HomeViewOutputs {
     
+    func viewWillAppear() {
+        if entities.tableViewSource != nil{
+            dependencies.interactor.setTableView(router: dependencies.router)
+        }
+    }
+    
     func viewDidLoad() {
         setUI()
     }
@@ -38,6 +44,7 @@ extension HomePresenter: HomeViewOutputs {
         
         view.getParentController().navigationItem.titleView = entities.viewTitle
         
+        view.getParentController().tableView.tableFooterView = UIView()
         view.getParentController().tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
         
         dependencies.interactor.setTableView(router: dependencies.router)
@@ -50,6 +57,8 @@ extension HomePresenter: HomeViewOutputs {
 
 extension HomePresenter: HomeInteractorOutputs{
     func onTableViewReady(source: HomeTableViewSource?) {
+        view.getParentController().viewNoResult.isHidden = !(source?.items.count ?? 0 == 0)
+        
         view.getParentController().tableView.dataSource = source
         view.getParentController().tableView.delegate = source
         view.getParentController().tableView.reloadData()

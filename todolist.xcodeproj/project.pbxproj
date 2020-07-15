@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,6 +45,14 @@
 		77A7C04424BF1F9100AA90D1 /* AddTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C04324BF1F9100AA90D1 /* AddTaskInteractor.swift */; };
 		77A7C04624BF1F9F00AA90D1 /* AddTaskEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C04524BF1F9F00AA90D1 /* AddTaskEntities.swift */; };
 		77A7C04824BF1FA900AA90D1 /* AddTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C04724BF1FA900AA90D1 /* AddTaskRouter.swift */; };
+		77A7C04B24BF26A900AA90D1 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C04A24BF26A900AA90D1 /* TaskList.swift */; };
+		77A7C05324BF2B1000AA90D1 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C05224BF2B1000AA90D1 /* RealmHelper.swift */; };
+		77A7C05724BF39E400AA90D1 /* UpdateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C05524BF39E400AA90D1 /* UpdateTaskViewController.swift */; };
+		77A7C05824BF39E400AA90D1 /* UpdateTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A7C05624BF39E400AA90D1 /* UpdateTaskViewController.xib */; };
+		77A7C05A24BF39F000AA90D1 /* UpdateTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C05924BF39F000AA90D1 /* UpdateTaskPresenter.swift */; };
+		77A7C05C24BF39FB00AA90D1 /* UpdateTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C05B24BF39FB00AA90D1 /* UpdateTaskInteractor.swift */; };
+		77A7C05E24BF3A0400AA90D1 /* UpdateTaskEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C05D24BF3A0400AA90D1 /* UpdateTaskEntities.swift */; };
+		77A7C06024BF3A1400AA90D1 /* UpdateTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7C05F24BF3A1400AA90D1 /* UpdateTaskRouter.swift */; };
 		9B5DFF6F562B34BCBAAE2ECB /* Pods_todolist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C632CE27A9C4E94017C1D22 /* Pods_todolist.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +98,14 @@
 		77A7C04324BF1F9100AA90D1 /* AddTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskInteractor.swift; sourceTree = "<group>"; };
 		77A7C04524BF1F9F00AA90D1 /* AddTaskEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskEntities.swift; sourceTree = "<group>"; };
 		77A7C04724BF1FA900AA90D1 /* AddTaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskRouter.swift; sourceTree = "<group>"; };
+		77A7C04A24BF26A900AA90D1 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		77A7C05224BF2B1000AA90D1 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		77A7C05524BF39E400AA90D1 /* UpdateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskViewController.swift; sourceTree = "<group>"; };
+		77A7C05624BF39E400AA90D1 /* UpdateTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateTaskViewController.xib; sourceTree = "<group>"; };
+		77A7C05924BF39F000AA90D1 /* UpdateTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskPresenter.swift; sourceTree = "<group>"; };
+		77A7C05B24BF39FB00AA90D1 /* UpdateTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskInteractor.swift; sourceTree = "<group>"; };
+		77A7C05D24BF3A0400AA90D1 /* UpdateTaskEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskEntities.swift; sourceTree = "<group>"; };
+		77A7C05F24BF3A1400AA90D1 /* UpdateTaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskRouter.swift; sourceTree = "<group>"; };
 		B33C5A21B16B0C8BC662F733 /* Pods-todolist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todolist.release.xcconfig"; path = "Target Support Files/Pods-todolist/Pods-todolist.release.xcconfig"; sourceTree = "<group>"; };
 		DD7679C67BE9B05ED361C18F /* Pods-todolist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todolist.debug.xcconfig"; path = "Target Support Files/Pods-todolist/Pods-todolist.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				77A7BFC724BDEA8300AA90D1 /* AppDelegate.swift */,
+				77A7C04924BF269A00AA90D1 /* Entities */,
 				77A7C02424BF082F00AA90D1 /* Enums */,
 				77A7C00E24BDEF1C00AA90D1 /* Helpers */,
 				77A7C01E24BF077400AA90D1 /* CustomViews */,
@@ -162,6 +179,7 @@
 		77A7BFF824BDEB3300AA90D1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				77A7C05424BF39CD00AA90D1 /* UpdateTask */,
 				77A7C03B24BF1F4E00AA90D1 /* AddTask */,
 				77A7C02E24BF1B1200AA90D1 /* Detail */,
 				77A7C01124BF044F00AA90D1 /* Home */,
@@ -214,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				77A7C00F24BDEF4B00AA90D1 /* InteractorHelper.swift */,
+				77A7C05224BF2B1000AA90D1 /* RealmHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -290,13 +309,33 @@
 			path = AddTask;
 			sourceTree = "<group>";
 		};
+		77A7C04924BF269A00AA90D1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				77A7C04A24BF26A900AA90D1 /* TaskList.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		77A7C05424BF39CD00AA90D1 /* UpdateTask */ = {
+			isa = PBXGroup;
+			children = (
+				77A7C05524BF39E400AA90D1 /* UpdateTaskViewController.swift */,
+				77A7C05924BF39F000AA90D1 /* UpdateTaskPresenter.swift */,
+				77A7C05B24BF39FB00AA90D1 /* UpdateTaskInteractor.swift */,
+				77A7C05D24BF3A0400AA90D1 /* UpdateTaskEntities.swift */,
+				77A7C05F24BF3A1400AA90D1 /* UpdateTaskRouter.swift */,
+				77A7C05624BF39E400AA90D1 /* UpdateTaskViewController.xib */,
+			);
+			path = UpdateTask;
+			sourceTree = "<group>";
+		};
 		BDDFFD82EE47CC80B68C3544 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DD7679C67BE9B05ED361C18F /* Pods-todolist.debug.xcconfig */,
 				B33C5A21B16B0C8BC662F733 /* Pods-todolist.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -361,6 +400,7 @@
 			files = (
 				77A7C02024BF07C400AA90D1 /* CustomNavigationTitleView.xib in Resources */,
 				77A7BFD424BDEA8500AA90D1 /* LaunchScreen.storyboard in Resources */,
+				77A7C05824BF39E400AA90D1 /* UpdateTaskViewController.xib in Resources */,
 				77A7C03224BF1B2D00AA90D1 /* DetailViewController.xib in Resources */,
 				77A7BFD124BDEA8500AA90D1 /* Assets.xcassets in Resources */,
 				77A7BFCF24BDEA8300AA90D1 /* Main.storyboard in Resources */,
@@ -422,12 +462,14 @@
 				77A7C03A24BF1B5400AA90D1 /* DetailRouter.swift in Sources */,
 				77A7C04224BF1F8200AA90D1 /* AddTaskPresenter.swift in Sources */,
 				77A7BFCC24BDEA8300AA90D1 /* SplashViewController.swift in Sources */,
+				77A7C06024BF3A1400AA90D1 /* UpdateTaskRouter.swift in Sources */,
 				77A7C00D24BDEDED00AA90D1 /* BaseInteractor.swift in Sources */,
 				77A7C00924BDEDD800AA90D1 /* BasePresenter.swift in Sources */,
 				77A7C01B24BF048500AA90D1 /* HomeEntities.swift in Sources */,
 				77A7C00424BDEC1600AA90D1 /* SplashRouter.swift in Sources */,
 				77A7C01D24BF048C00AA90D1 /* HomeRouter.swift in Sources */,
 				77A7C03124BF1B2D00AA90D1 /* DetailViewController.swift in Sources */,
+				77A7C05724BF39E400AA90D1 /* UpdateTaskViewController.swift in Sources */,
 				77A7C02A24BF15AA00AA90D1 /* HomeTableViewCell.swift in Sources */,
 				77A7C00724BDEDCF00AA90D1 /* BaseRouter.swift in Sources */,
 				77A7C04624BF1F9F00AA90D1 /* AddTaskEntities.swift in Sources */,
@@ -436,17 +478,22 @@
 				77A7BFC824BDEA8300AA90D1 /* AppDelegate.swift in Sources */,
 				77A7C00B24BDEDE300AA90D1 /* BaseView.swift in Sources */,
 				77A7C01724BF047300AA90D1 /* HomePresenter.swift in Sources */,
+				77A7C05E24BF3A0400AA90D1 /* UpdateTaskEntities.swift in Sources */,
 				77A7C02D24BF177300AA90D1 /* HomeTableViewSource.swift in Sources */,
 				77A7C03824BF1B4C00AA90D1 /* DetailEntities.swift in Sources */,
+				77A7C05A24BF39F000AA90D1 /* UpdateTaskPresenter.swift in Sources */,
 				77A7C03424BF1B3A00AA90D1 /* DetailPresenter.swift in Sources */,
+				77A7C05C24BF39FB00AA90D1 /* UpdateTaskInteractor.swift in Sources */,
 				77A7C02624BF083F00AA90D1 /* NavigationTitleTypes.swift in Sources */,
 				77A7C02324BF07EE00AA90D1 /* CustomNavigationTitleView.swift in Sources */,
 				77A7BFFE24BDEBF400AA90D1 /* SplashPresenter.swift in Sources */,
 				77A7C03624BF1B4300AA90D1 /* DetailInteractor.swift in Sources */,
+				77A7C04B24BF26A900AA90D1 /* TaskList.swift in Sources */,
 				77A7C00024BDEC0500AA90D1 /* SplashInteractor.swift in Sources */,
 				77A7C01424BF046700AA90D1 /* HomeViewController.swift in Sources */,
 				77A7C04424BF1F9100AA90D1 /* AddTaskInteractor.swift in Sources */,
 				77A7C04824BF1FA900AA90D1 /* AddTaskRouter.swift in Sources */,
+				77A7C05324BF2B1000AA90D1 /* RealmHelper.swift in Sources */,
 				77A7C01924BF047C00AA90D1 /* HomeInteractor.swift in Sources */,
 				77A7C03F24BF1F6500AA90D1 /* AddTaskViewController.swift in Sources */,
 			);

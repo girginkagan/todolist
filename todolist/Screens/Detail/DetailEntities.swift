@@ -8,6 +8,7 @@
 import Foundation
 
 struct DetailEntryEntity {
+    let object: TaskList
 }
 
 final class DetailEntities {

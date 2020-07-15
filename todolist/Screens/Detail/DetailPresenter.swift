@@ -33,6 +33,9 @@ extension DetailPresenter: DetailViewOutputs {
     
     func setUI(){
         view.getParentController().btnClose.addTarget(self, action: #selector(btnCloseTapped), for: .touchUpInside)
+        
+        view.getParentController().lblTitle.text = entities.entryEntity.object.title
+        view.getParentController().lblTask.text = entities.entryEntity.object.text
     }
     
     @objc func btnCloseTapped(_ sender: UIButton){

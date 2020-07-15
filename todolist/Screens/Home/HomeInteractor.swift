@@ -16,7 +16,8 @@ final class HomeInteractor: InteractorHelper, BaseInteractor {
     weak var entities: HomeEntities?
     
     func setTableView(router: HomeRouterOutput){
-        entities?.tableViewSource = HomeTableViewSource(interactor: self, router: router)
+        entities?.results = RealmHelper.getObjects()
+        entities?.tableViewSource = HomeTableViewSource(items: entities?.results ?? [], interactor: self, router: router)
         presenter?.onTableViewReady(source: entities?.tableViewSource)
     }
 }

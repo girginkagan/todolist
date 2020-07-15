@@ -17,6 +17,10 @@ protocol AddTaskViewOutputs: AnyObject {
 
 final class AddTaskViewController: UIViewController {
     
+    @IBOutlet weak var tfTask: UITextField!
+    @IBOutlet weak var tfTitle: UITextField!
+    @IBOutlet weak var btnAdd: UIButton!
+    
     internal var presenter: AddTaskViewOutputs?
     
     override func viewDidLoad() {

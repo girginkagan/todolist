@@ -10,4 +10,5 @@ import Foundation
 public enum NavigationTitleTypes: String {
     case TitleHome
     case TitleAddNote
+    case TitleUpdateNote
 }

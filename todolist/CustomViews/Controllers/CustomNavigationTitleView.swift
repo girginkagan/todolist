@@ -10,6 +10,7 @@ import UIKit
 final class CustomNavigationTitleView: UIView {
     
     @IBOutlet weak var ivAddNote: UIImageView!
+    @IBOutlet weak var viewTitleUpdateNote: UIView!
     @IBOutlet weak var viewTitleAddNote: UIView!
     @IBOutlet weak var viewTitleHome: UIView!
     
@@ -27,6 +28,8 @@ final class CustomNavigationTitleView: UIView {
             viewTitleHome.isHidden = false
         case NavigationTitleTypes.TitleAddNote:
             viewTitleAddNote.isHidden = false
+        case NavigationTitleTypes.TitleUpdateNote:
+            viewTitleUpdateNote.isHidden = false
         }
     }
 }
